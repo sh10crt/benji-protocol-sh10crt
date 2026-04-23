@@ -1,0 +1,5 @@
+Jan 10 06:55:48 ubuntu sshd[1234]: Failed password for root from 192.168.56.200 port 22 ssh2
+Jan 10 06:55:49 ubuntu sshd[1235]: Failed password for invalid user admin from 10.0.0.5 port 22 ssh2
+Jan 10 06:55:50 ubuntu sshd[1236]: Invalid user testuser from 172.16.0.1 port 22
+Jan 10 06:55:51 ubuntu sshd[1237]: Accepted password for msfadmin from 192.168.56.1 port 22 ssh2
+Jan 10 06:55:48 ubuntu sshd[1238]: Failed password for root from 192.168.56.200 port 22 ssh2

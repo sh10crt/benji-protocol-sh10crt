@@ -1,0 +1,465 @@
+Oct 29 19:26:20 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct 29 19:26:37 ubuntu groupadd[1834]: group added to /etc/group: name=dirmngr, GID=111
+Oct 29 19:26:37 ubuntu groupadd[1834]: group added to /etc/gshadow: name=dirmngr
+Oct 29 19:26:37 ubuntu groupadd[1834]: new group: name=dirmngr, GID=111
+Oct 29 19:26:37 ubuntu useradd[1839]: new user: name=dirmngr, UID=105, GID=111, home=/var/cache/dirmngr, shell=/bin/sh
+Oct 29 19:26:37 ubuntu usermod[1844]: change user 'dirmngr' password
+Oct 29 19:26:37 ubuntu chage[1849]: changed password expiry for dirmngr
+Oct 29 19:26:37 ubuntu su[1879]: Successful su for dirmngr by root
+Oct 29 19:26:37 ubuntu su[1879]: + ??? root:dirmngr
+Oct 29 19:26:37 ubuntu su[1879]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Oct 29 19:26:37 ubuntu su[1879]: pam_unix(su:session): session closed for user dirmngr
+Oct 29 19:26:38 ubuntu useradd[1894]: new user: name=leia_organa, UID=1111, GID=100, home=/home/leia_organa, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1901]: new user: name=luke_skywalker, UID=1112, GID=100, home=/home/luke_skywalker, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1908]: new user: name=han_solo, UID=1113, GID=100, home=/home/han_solo, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1915]: new user: name=artoo_detoo, UID=1114, GID=100, home=/home/artoo_detoo, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1922]: new user: name=c_three_pio, UID=1115, GID=100, home=/home/c_three_pio, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1929]: new user: name=ben_kenobi, UID=1116, GID=100, home=/home/ben_kenobi, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1936]: new user: name=darth_vader, UID=1117, GID=100, home=/home/darth_vader, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1943]: new user: name=anakin_skywalker, UID=1118, GID=100, home=/home/anakin_skywalker, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1950]: new user: name=jarjar_binks, UID=1119, GID=100, home=/home/jarjar_binks, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1957]: new user: name=lando_calrissian, UID=1120, GID=100, home=/home/lando_calrissian, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1964]: new user: name=boba_fett, UID=1121, GID=100, home=/home/boba_fett, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1971]: new user: name=jabba_hutt, UID=1122, GID=100, home=/home/jabba_hutt, shell=/bin/bash
+Oct 29 19:26:38 ubuntu useradd[1978]: new user: name=greedo, UID=1123, GID=100, home=/home/greedo, shell=/bin/bash
+Oct 29 19:26:39 ubuntu useradd[1985]: new user: name=chewbacca, UID=1124, GID=100, home=/home/chewbacca, shell=/bin/bash
+Oct 29 19:26:39 ubuntu useradd[1992]: new user: name=kylo_ren, UID=1125, GID=100, home=/home/kylo_ren, shell=/bin/bash
+Oct 29 19:26:39 ubuntu groupmod[1999]: group changed in /etc/group (group sudo/27)
+Oct 29 19:26:39 ubuntu gpasswd[2005]: user leia_organa added by root to group sudo
+Oct 29 19:26:39 ubuntu gpasswd[2011]: user luke_skywalker added by root to group sudo
+Oct 29 19:26:39 ubuntu gpasswd[2017]: user han_solo added by root to group sudo
+Oct 29 19:26:52 ubuntu groupadd[5181]: group added to /etc/group: name=mysql, GID=112
+Oct 29 19:26:52 ubuntu groupadd[5181]: group added to /etc/gshadow: name=mysql
+Oct 29 19:26:52 ubuntu groupadd[5181]: new group: name=mysql, GID=112
+Oct 29 19:26:52 ubuntu useradd[5187]: new user: name=mysql, UID=106, GID=112, home=/nonexistent, shell=/bin/false
+Oct 29 19:26:52 ubuntu chage[5192]: changed password expiry for mysql
+Oct 29 19:26:52 ubuntu chfn[5195]: changed user 'mysql' information
+Oct 29 19:28:06 ubuntu groupadd[18381]: group added to /etc/group: name=ssl-cert, GID=113
+Oct 29 19:28:06 ubuntu groupadd[18381]: group added to /etc/gshadow: name=ssl-cert
+Oct 29 19:28:06 ubuntu groupadd[18381]: new group: name=ssl-cert, GID=113
+Oct 29 19:34:37 ubuntu groupadd[4798]: group added to /etc/group: name=docker, GID=999
+Oct 29 19:34:37 ubuntu groupadd[4798]: group added to /etc/gshadow: name=docker
+Oct 29 19:34:37 ubuntu groupadd[4798]: new group: name=docker, GID=999
+Oct 29 19:34:43 ubuntu groupmod[5515]: group changed in /etc/group (group docker/999)
+Oct 29 19:34:43 ubuntu gpasswd[5521]: user boba_fett added by root to group docker
+Oct 29 19:34:43 ubuntu gpasswd[5527]: user jabba_hutt added by root to group docker
+Oct 29 19:34:43 ubuntu gpasswd[5533]: user greedo added by root to group docker
+Oct 29 19:34:43 ubuntu gpasswd[5539]: user chewbacca added by root to group docker
+Oct 29 19:37:01 ubuntu sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Oct 29 19:37:01 ubuntu sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Oct 29 19:37:02 ubuntu sudo: pam_unix(sudo:session): session closed for user boba_fett
+Oct 29 19:37:02 ubuntu sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/bash -
+Oct 29 19:37:02 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Oct 29 19:37:40 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct 29 19:37:54 ubuntu sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Oct 29 19:37:54 ubuntu sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Oct 29 19:38:15 ubuntu groupadd[18086]: group added to /etc/group: name=avahi, GID=114
+Oct 29 19:38:15 ubuntu groupadd[18086]: group added to /etc/gshadow: name=avahi
+Oct 29 19:38:15 ubuntu groupadd[18086]: new group: name=avahi, GID=114
+Oct 29 19:38:15 ubuntu useradd[18090]: new user: name=avahi, UID=107, GID=114, home=/var/run/avahi-daemon, shell=/bin/false
+Oct 29 19:38:15 ubuntu usermod[18095]: change user 'avahi' password
+Oct 29 19:38:15 ubuntu chage[18100]: changed password expiry for avahi
+Oct 29 19:38:15 ubuntu chfn[18103]: changed user 'avahi' information
+Oct 29 19:38:16 ubuntu groupadd[18265]: group added to /etc/group: name=scanner, GID=115
+Oct 29 19:38:16 ubuntu groupadd[18265]: group added to /etc/gshadow: name=scanner
+Oct 29 19:38:16 ubuntu groupadd[18265]: new group: name=scanner, GID=115
+Oct 29 19:38:16 ubuntu groupadd[18325]: group added to /etc/group: name=colord, GID=116
+Oct 29 19:38:16 ubuntu groupadd[18325]: group added to /etc/gshadow: name=colord
+Oct 29 19:38:16 ubuntu groupadd[18325]: new group: name=colord, GID=116
+Oct 29 19:38:16 ubuntu useradd[18331]: new user: name=colord, UID=108, GID=116, home=/var/lib/colord, shell=/bin/false
+Oct 29 19:38:16 ubuntu usermod[18336]: change user 'colord' password
+Oct 29 19:38:16 ubuntu chage[18341]: changed password expiry for colord
+Oct 29 19:38:16 ubuntu chfn[18344]: changed user 'colord' information
+Oct 29 19:39:03 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Oct 29 19:39:04 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/sbin/shutdown -P now
+Oct 29 19:39:04 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:19 ubuntu sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Jan 13 11:18:19 ubuntu sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Jan 13 11:18:19 ubuntu su[1205]: Successful su for dirmngr by root
+Jan 13 11:18:19 ubuntu su[1205]: + /dev/console root:dirmngr
+Jan 13 11:18:19 ubuntu sshd[1165]: Server listening on 0.0.0.0 port 22.
+Jan 13 11:18:19 ubuntu sshd[1165]: Server listening on :: port 22.
+Jan 13 11:18:19 ubuntu su[1205]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Jan 13 11:18:19 ubuntu su[1205]: pam_unix(su:session): session closed for user dirmngr
+Jan 13 11:18:19 ubuntu sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Jan 13 11:18:19 ubuntu sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Jan 13 11:18:20 ubuntu sudo: pam_unix(sudo:session): session closed for user boba_fett
+Jan 13 11:18:24 ubuntu sshd[1822]: Accepted password for vagrant from 10.0.2.2 port 56448 ssh2
+Jan 13 11:18:24 ubuntu sshd[1822]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Jan 13 11:18:29 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:29 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:29 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:29 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:29 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:29 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:31 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:31 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:31 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:31 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:31 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:31 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:31 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:32 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:32 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:32 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:32 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:32 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan 13 11:18:32 ubuntu sudo: pam_unix(sudo:session): session closed for user root
+Jan 13 11:18:32 ubuntu sudo:  vagrant : TTY=unknown ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/bash -l
+Jan 13 11:18:32 ubuntu sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar  9 09:55:27 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Mar  9 09:55:27 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Mar  9 09:55:27 metasploitable3-ub1404 sshd[1125]: Server listening on 0.0.0.0 port 22.
+Mar  9 09:55:27 metasploitable3-ub1404 sshd[1125]: Server listening on :: port 22.
+Mar  9 09:55:27 metasploitable3-ub1404 su[1152]: Successful su for dirmngr by root
+Mar  9 09:55:27 metasploitable3-ub1404 su[1152]: + /dev/console root:dirmngr
+Mar  9 09:55:27 metasploitable3-ub1404 su[1152]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Mar  9 09:55:27 metasploitable3-ub1404 su[1152]: pam_unix(su:session): session closed for user dirmngr
+Mar  9 09:55:27 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Mar  9 09:55:27 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Mar  9 09:55:29 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user boba_fett
+Mar  9 09:58:27 metasploitable3-ub1404 sshd[1125]: Received signal 15; terminating.
+Mar  9 09:58:27 metasploitable3-ub1404 sshd[1639]: Server listening on 0.0.0.0 port 22.
+Mar  9 09:58:27 metasploitable3-ub1404 sshd[1639]: Server listening on :: port 22.
+Mar  9 10:17:01 metasploitable3-ub1404 CRON[1977]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 10:17:01 metasploitable3-ub1404 CRON[1977]: pam_unix(cron:session): session closed for user root
+Mar  9 11:17:01 metasploitable3-ub1404 CRON[2032]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 11:17:01 metasploitable3-ub1404 CRON[2032]: pam_unix(cron:session): session closed for user root
+Mar  9 12:17:01 metasploitable3-ub1404 CRON[2085]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 12:17:01 metasploitable3-ub1404 CRON[2085]: pam_unix(cron:session): session closed for user root
+Mar  9 13:17:01 metasploitable3-ub1404 CRON[2137]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 13:17:01 metasploitable3-ub1404 CRON[2137]: pam_unix(cron:session): session closed for user root
+Mar  9 14:17:01 metasploitable3-ub1404 CRON[2190]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 14:17:01 metasploitable3-ub1404 CRON[2190]: pam_unix(cron:session): session closed for user root
+Mar  9 15:17:01 metasploitable3-ub1404 CRON[2242]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 15:17:01 metasploitable3-ub1404 CRON[2242]: pam_unix(cron:session): session closed for user root
+Mar  9 16:17:01 metasploitable3-ub1404 CRON[2295]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 16:17:01 metasploitable3-ub1404 CRON[2295]: pam_unix(cron:session): session closed for user root
+Mar  9 17:17:01 metasploitable3-ub1404 CRON[2348]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 17:17:01 metasploitable3-ub1404 CRON[2348]: pam_unix(cron:session): session closed for user root
+Mar  9 18:17:01 metasploitable3-ub1404 CRON[2400]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 18:17:01 metasploitable3-ub1404 CRON[2400]: pam_unix(cron:session): session closed for user root
+Mar  9 19:17:01 metasploitable3-ub1404 CRON[2453]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 19:17:01 metasploitable3-ub1404 CRON[2453]: pam_unix(cron:session): session closed for user root
+Mar  9 20:17:01 metasploitable3-ub1404 CRON[2505]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 20:17:01 metasploitable3-ub1404 CRON[2505]: pam_unix(cron:session): session closed for user root
+Mar  9 21:17:01 metasploitable3-ub1404 CRON[2558]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 21:17:01 metasploitable3-ub1404 CRON[2558]: pam_unix(cron:session): session closed for user root
+Mar  9 22:17:01 metasploitable3-ub1404 CRON[2605]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 22:17:01 metasploitable3-ub1404 CRON[2605]: pam_unix(cron:session): session closed for user root
+Mar  9 23:17:01 metasploitable3-ub1404 CRON[2657]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar  9 23:17:01 metasploitable3-ub1404 CRON[2657]: pam_unix(cron:session): session closed for user root
+Mar 10 00:17:01 metasploitable3-ub1404 CRON[2710]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 00:17:01 metasploitable3-ub1404 CRON[2710]: pam_unix(cron:session): session closed for user root
+Mar 10 01:17:01 metasploitable3-ub1404 CRON[2762]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 01:17:01 metasploitable3-ub1404 CRON[2762]: pam_unix(cron:session): session closed for user root
+Mar 10 02:17:01 metasploitable3-ub1404 CRON[2815]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 02:17:01 metasploitable3-ub1404 CRON[2815]: pam_unix(cron:session): session closed for user root
+Mar 10 03:17:01 metasploitable3-ub1404 CRON[2874]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 03:17:01 metasploitable3-ub1404 CRON[2874]: pam_unix(cron:session): session closed for user root
+Mar 10 04:17:01 metasploitable3-ub1404 CRON[2926]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 04:17:01 metasploitable3-ub1404 CRON[2926]: pam_unix(cron:session): session closed for user root
+Mar 10 05:17:01 metasploitable3-ub1404 CRON[2973]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 05:17:01 metasploitable3-ub1404 CRON[2973]: pam_unix(cron:session): session closed for user root
+Mar 10 06:17:01 metasploitable3-ub1404 CRON[3026]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 06:17:01 metasploitable3-ub1404 CRON[3026]: pam_unix(cron:session): session closed for user root
+Mar 10 06:25:01 metasploitable3-ub1404 CRON[3030]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 06:27:53 metasploitable3-ub1404 CRON[3030]: pam_unix(cron:session): session closed for user root
+Mar 10 07:17:01 metasploitable3-ub1404 CRON[3307]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 07:17:01 metasploitable3-ub1404 CRON[3307]: pam_unix(cron:session): session closed for user root
+Mar 10 08:17:01 metasploitable3-ub1404 CRON[3360]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 08:17:01 metasploitable3-ub1404 CRON[3360]: pam_unix(cron:session): session closed for user root
+Mar 10 09:17:01 metasploitable3-ub1404 CRON[3412]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 09:17:01 metasploitable3-ub1404 CRON[3412]: pam_unix(cron:session): session closed for user root
+Mar 10 10:17:01 metasploitable3-ub1404 CRON[3471]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 10:17:01 metasploitable3-ub1404 CRON[3471]: pam_unix(cron:session): session closed for user root
+Mar 10 11:17:01 metasploitable3-ub1404 CRON[3524]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 11:17:01 metasploitable3-ub1404 CRON[3524]: pam_unix(cron:session): session closed for user root
+Mar 10 12:17:01 metasploitable3-ub1404 CRON[3576]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 12:17:01 metasploitable3-ub1404 CRON[3576]: pam_unix(cron:session): session closed for user root
+Mar 10 13:17:01 metasploitable3-ub1404 CRON[3623]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 13:17:01 metasploitable3-ub1404 CRON[3623]: pam_unix(cron:session): session closed for user root
+Mar 10 14:17:01 metasploitable3-ub1404 CRON[3681]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 14:17:01 metasploitable3-ub1404 CRON[3681]: pam_unix(cron:session): session closed for user root
+Mar 10 15:17:01 metasploitable3-ub1404 CRON[3728]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 15:17:01 metasploitable3-ub1404 CRON[3728]: pam_unix(cron:session): session closed for user root
+Mar 10 16:17:01 metasploitable3-ub1404 CRON[3781]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 16:17:01 metasploitable3-ub1404 CRON[3781]: pam_unix(cron:session): session closed for user root
+Mar 10 17:17:01 metasploitable3-ub1404 CRON[3833]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 17:17:01 metasploitable3-ub1404 CRON[3833]: pam_unix(cron:session): session closed for user root
+Mar 10 18:17:01 metasploitable3-ub1404 CRON[3886]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 18:17:01 metasploitable3-ub1404 CRON[3886]: pam_unix(cron:session): session closed for user root
+Mar 10 19:17:01 metasploitable3-ub1404 CRON[3945]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 19:17:01 metasploitable3-ub1404 CRON[3945]: pam_unix(cron:session): session closed for user root
+Mar 10 20:17:01 metasploitable3-ub1404 CRON[3997]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 20:17:01 metasploitable3-ub1404 CRON[3997]: pam_unix(cron:session): session closed for user root
+Mar 10 21:17:01 metasploitable3-ub1404 CRON[4050]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 21:17:01 metasploitable3-ub1404 CRON[4050]: pam_unix(cron:session): session closed for user root
+Mar 10 22:17:01 metasploitable3-ub1404 CRON[4108]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 22:17:01 metasploitable3-ub1404 CRON[4108]: pam_unix(cron:session): session closed for user root
+Mar 10 23:17:01 metasploitable3-ub1404 CRON[4161]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 10 23:17:01 metasploitable3-ub1404 CRON[4161]: pam_unix(cron:session): session closed for user root
+Mar 11 00:17:01 metasploitable3-ub1404 CRON[4208]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 00:17:01 metasploitable3-ub1404 CRON[4208]: pam_unix(cron:session): session closed for user root
+Mar 11 01:17:01 metasploitable3-ub1404 CRON[4260]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 01:17:01 metasploitable3-ub1404 CRON[4260]: pam_unix(cron:session): session closed for user root
+Mar 11 02:17:01 metasploitable3-ub1404 CRON[4313]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 02:17:01 metasploitable3-ub1404 CRON[4313]: pam_unix(cron:session): session closed for user root
+Mar 11 03:17:01 metasploitable3-ub1404 CRON[4365]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 03:17:01 metasploitable3-ub1404 CRON[4365]: pam_unix(cron:session): session closed for user root
+Mar 11 04:17:01 metasploitable3-ub1404 CRON[4424]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 04:17:01 metasploitable3-ub1404 CRON[4424]: pam_unix(cron:session): session closed for user root
+Mar 11 05:17:01 metasploitable3-ub1404 CRON[4471]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 05:17:01 metasploitable3-ub1404 CRON[4471]: pam_unix(cron:session): session closed for user root
+Mar 11 06:17:01 metasploitable3-ub1404 CRON[4523]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 06:17:01 metasploitable3-ub1404 CRON[4523]: pam_unix(cron:session): session closed for user root
+Mar 11 06:25:01 metasploitable3-ub1404 CRON[4534]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 06:30:33 metasploitable3-ub1404 CRON[4534]: pam_unix(cron:session): session closed for user root
+Mar 11 07:17:01 metasploitable3-ub1404 CRON[4959]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 07:17:01 metasploitable3-ub1404 CRON[4959]: pam_unix(cron:session): session closed for user root
+Mar 11 08:17:01 metasploitable3-ub1404 CRON[5011]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 08:17:01 metasploitable3-ub1404 CRON[5011]: pam_unix(cron:session): session closed for user root
+Mar 11 09:17:01 metasploitable3-ub1404 CRON[5064]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 09:17:01 metasploitable3-ub1404 CRON[5064]: pam_unix(cron:session): session closed for user root
+Mar 11 10:17:01 metasploitable3-ub1404 CRON[5111]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 10:17:01 metasploitable3-ub1404 CRON[5111]: pam_unix(cron:session): session closed for user root
+Mar 11 10:55:16 metasploitable3-ub1404 login[1514]: pam_unix(login:auth): check pass; user unknown
+Mar 11 10:55:16 metasploitable3-ub1404 login[1514]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=
+Mar 11 10:55:19 metasploitable3-ub1404 login[1514]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Mar 11 10:55:31 metasploitable3-ub1404 login[1514]: pam_unix(login:session): session opened for user vagrant by LOGIN(uid=0)
+Mar 11 10:59:54 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Mar 11 10:59:54 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Mar 11 10:59:54 metasploitable3-ub1404 sshd[1116]: Server listening on 0.0.0.0 port 22.
+Mar 11 10:59:54 metasploitable3-ub1404 sshd[1116]: Server listening on :: port 22.
+Mar 11 10:59:54 metasploitable3-ub1404 su[1140]: Successful su for dirmngr by root
+Mar 11 10:59:54 metasploitable3-ub1404 su[1140]: + /dev/console root:dirmngr
+Mar 11 10:59:54 metasploitable3-ub1404 su[1140]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Mar 11 10:59:54 metasploitable3-ub1404 su[1140]: pam_unix(su:session): session closed for user dirmngr
+Mar 11 10:59:55 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Mar 11 10:59:55 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Mar 11 10:59:56 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user boba_fett
+Mar 11 10:59:57 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user chewbacca
+Mar 11 11:01:43 metasploitable3-ub1404 login[1508]: pam_unix(login:session): session opened for user vagrant by LOGIN(uid=0)
+Mar 11 11:02:55 metasploitable3-ub1404 sshd[1116]: Received signal 15; terminating.
+Mar 11 11:02:55 metasploitable3-ub1404 sshd[1675]: Server listening on 0.0.0.0 port 22.
+Mar 11 11:02:55 metasploitable3-ub1404 sshd[1675]: Server listening on :: port 22.
+Mar 11 11:04:46 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/sbin/ifup eth0
+Mar 11 11:04:46 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 11:04:46 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 11:06:01 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/sbin/ip link set eth0 down
+Mar 11 11:06:01 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 11:06:01 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 11:06:31 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/sbin/ip link set eth0 up
+Mar 11 11:06:31 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 11:06:31 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 11:10:24 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Mar 11 11:10:24 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Mar 11 11:10:24 metasploitable3-ub1404 sshd[1102]: Server listening on 0.0.0.0 port 22.
+Mar 11 11:10:24 metasploitable3-ub1404 sshd[1102]: Server listening on :: port 22.
+Mar 11 11:10:24 metasploitable3-ub1404 su[1141]: Successful su for dirmngr by root
+Mar 11 11:10:24 metasploitable3-ub1404 su[1141]: + /dev/console root:dirmngr
+Mar 11 11:10:24 metasploitable3-ub1404 su[1141]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Mar 11 11:10:24 metasploitable3-ub1404 su[1141]: pam_unix(su:session): session closed for user dirmngr
+Mar 11 11:10:25 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Mar 11 11:10:25 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Mar 11 11:10:26 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user boba_fett
+Mar 11 11:10:27 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user chewbacca
+Mar 11 11:13:25 metasploitable3-ub1404 sshd[1102]: Received signal 15; terminating.
+Mar 11 11:13:25 metasploitable3-ub1404 sshd[1630]: Server listening on 0.0.0.0 port 22.
+Mar 11 11:13:25 metasploitable3-ub1404 sshd[1630]: Server listening on :: port 22.
+Mar 11 11:17:01 metasploitable3-ub1404 CRON[1950]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 11:17:01 metasploitable3-ub1404 CRON[1950]: pam_unix(cron:session): session closed for user root
+Mar 11 11:26:19 metasploitable3-ub1404 login[1505]: pam_unix(login:auth): check pass; user unknown
+Mar 11 11:26:19 metasploitable3-ub1404 login[1505]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=
+Mar 11 11:26:22 metasploitable3-ub1404 login[1505]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Mar 11 12:07:19 metasploitable3-ub1404 login[1962]: pam_unix(login:session): session opened for user vagrant by LOGIN(uid=0)
+Mar 11 12:08:02 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/sbin/ifconfig eth0 192.16.19.101 netmask 255.255.255.0 up
+Mar 11 12:08:02 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 12:08:02 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 12:08:18 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/sbin/ifconfig eth0 172.16.19.101 netmask 255.255.255.0 up
+Mar 11 12:08:18 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 12:08:18 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 12:17:01 metasploitable3-ub1404 CRON[2112]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 12:17:01 metasploitable3-ub1404 CRON[2112]: pam_unix(cron:session): session closed for user root
+Mar 11 12:18:33 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/etc/network ; USER=root ; COMMAND=/usr/bin/nano -w ./interfaces
+Mar 11 12:18:33 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 12:19:00 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 12:20:35 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/etc/network ; USER=root ; COMMAND=/sbin/ifdown eth0
+Mar 11 12:20:35 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 12:20:35 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 12:20:35 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/etc/network ; USER=root ; COMMAND=/sbin/ifup eth0
+Mar 11 12:20:35 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 12:20:35 metasploitable3-ub1404 sshd[1630]: Received signal 15; terminating.
+Mar 11 12:20:35 metasploitable3-ub1404 sshd[2239]: Server listening on 0.0.0.0 port 22.
+Mar 11 12:20:35 metasploitable3-ub1404 sshd[2239]: Server listening on :: port 22.
+Mar 11 12:20:35 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 12:21:26 metasploitable3-ub1404 sudo:  vagrant : TTY=tty1 ; PWD=/etc/network ; USER=root ; COMMAND=/sbin/init 0
+Mar 11 12:21:26 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Mar 11 12:21:26 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Mar 11 14:47:22 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Mar 11 14:47:22 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Mar 11 14:47:22 metasploitable3-ub1404 sshd[1060]: Server listening on 0.0.0.0 port 22.
+Mar 11 14:47:22 metasploitable3-ub1404 sshd[1060]: Server listening on :: port 22.
+Mar 11 14:47:22 metasploitable3-ub1404 su[1115]: Successful su for dirmngr by root
+Mar 11 14:47:22 metasploitable3-ub1404 su[1115]: + /dev/console root:dirmngr
+Mar 11 14:47:22 metasploitable3-ub1404 su[1115]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Mar 11 14:47:22 metasploitable3-ub1404 su[1115]: pam_unix(su:session): session closed for user dirmngr
+Mar 11 14:47:23 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Mar 11 14:47:23 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Mar 11 14:47:25 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user boba_fett
+Mar 11 14:49:47 metasploitable3-ub1404 login[1656]: pam_unix(login:session): session opened for user vagrant by LOGIN(uid=0)
+Mar 11 15:17:01 metasploitable3-ub1404 CRON[1912]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 15:17:01 metasploitable3-ub1404 CRON[1912]: pam_unix(cron:session): session closed for user root
+Mar 11 16:15:16 metasploitable3-ub1404 sshd[1936]: Invalid user msfadmin from 172.16.19.10
+Mar 11 16:15:16 metasploitable3-ub1404 sshd[1936]: input_userauth_request: invalid user msfadmin [preauth]
+Mar 11 16:15:19 metasploitable3-ub1404 sshd[1936]: pam_unix(sshd:auth): check pass; user unknown
+Mar 11 16:15:19 metasploitable3-ub1404 sshd[1936]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10
+Mar 11 16:15:21 metasploitable3-ub1404 sshd[1936]: Failed password for invalid user msfadmin from 172.16.19.10 port 41854 ssh2
+Mar 11 16:15:32 metasploitable3-ub1404 sshd[1936]: pam_unix(sshd:auth): check pass; user unknown
+Mar 11 16:15:35 metasploitable3-ub1404 sshd[1936]: Failed password for invalid user msfadmin from 172.16.19.10 port 41854 ssh2
+Mar 11 16:15:56 metasploitable3-ub1404 sshd[1936]: Failed password for invalid user msfadmin from 172.16.19.10 port 41854 ssh2
+Mar 11 16:15:56 metasploitable3-ub1404 sshd[1936]: Connection closed by 172.16.19.10 [preauth]
+Mar 11 16:15:56 metasploitable3-ub1404 sshd[1936]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10
+Mar 11 16:16:12 metasploitable3-ub1404 sshd[1938]: Accepted password for vagrant from 172.16.19.10 port 55654 ssh2
+Mar 11 16:16:12 metasploitable3-ub1404 sshd[1938]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Mar 11 16:17:01 metasploitable3-ub1404 CRON[1973]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 16:17:01 metasploitable3-ub1404 CRON[1973]: pam_unix(cron:session): session closed for user root
+Mar 11 16:17:09 metasploitable3-ub1404 sshd[1956]: Received disconnect from 172.16.19.10: 11: disconnected by user
+Mar 11 16:17:09 metasploitable3-ub1404 sshd[1938]: pam_unix(sshd:session): session closed for user vagrant
+Mar 11 17:17:01 metasploitable3-ub1404 CRON[1999]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 17:17:01 metasploitable3-ub1404 CRON[1999]: pam_unix(cron:session): session closed for user root
+Mar 11 18:17:01 metasploitable3-ub1404 CRON[2021]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 18:17:01 metasploitable3-ub1404 CRON[2021]: pam_unix(cron:session): session closed for user root
+Mar 11 19:17:01 metasploitable3-ub1404 CRON[2046]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 19:17:01 metasploitable3-ub1404 CRON[2046]: pam_unix(cron:session): session closed for user root
+Mar 11 20:17:01 metasploitable3-ub1404 CRON[2071]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 20:17:01 metasploitable3-ub1404 CRON[2071]: pam_unix(cron:session): session closed for user root
+Mar 11 21:17:01 metasploitable3-ub1404 CRON[2094]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 21:17:01 metasploitable3-ub1404 CRON[2094]: pam_unix(cron:session): session closed for user root
+Mar 11 22:17:01 metasploitable3-ub1404 CRON[2113]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 11 22:17:01 metasploitable3-ub1404 CRON[2113]: pam_unix(cron:session): session closed for user root
+Apr 17 13:32:18 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=chewbacca ; COMMAND=/opt/readme_app/start.sh
+Apr 17 13:32:18 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user chewbacca by (uid=0)
+Apr 17 13:32:18 metasploitable3-ub1404 sshd[1019]: Server listening on 0.0.0.0 port 22.
+Apr 17 13:32:18 metasploitable3-ub1404 sshd[1019]: Server listening on :: port 22.
+Apr 17 13:32:18 metasploitable3-ub1404 su[1054]: Successful su for dirmngr by root
+Apr 17 13:32:18 metasploitable3-ub1404 su[1054]: + /dev/console root:dirmngr
+Apr 17 13:32:18 metasploitable3-ub1404 su[1054]: pam_unix(su:session): session opened for user dirmngr by (uid=0)
+Apr 17 13:32:19 metasploitable3-ub1404 su[1054]: pam_unix(su:session): session closed for user dirmngr
+Apr 17 13:32:19 metasploitable3-ub1404 sudo:     root : TTY=unknown ; PWD=/ ; USER=boba_fett ; COMMAND=/opt/unrealircd/Unreal3.2/unreal start
+Apr 17 13:32:19 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user boba_fett by (uid=0)
+Apr 17 13:32:20 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user boba_fett
+Apr 17 13:32:46 metasploitable3-ub1404 login[1651]: pam_unix(login:session): session opened for user vagrant by LOGIN(uid=0)
+Apr 17 13:37:53 metasploitable3-ub1404 sshd[2395]: Did not receive identification string from 172.16.19.10
+Apr 17 13:37:54 metasploitable3-ub1404 sshd[2397]: Did not receive identification string from 172.16.19.10
+Apr 17 14:17:01 metasploitable3-ub1404 CRON[2412]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 17 14:17:01 metasploitable3-ub1404 CRON[2412]: pam_unix(cron:session): session closed for user root
+Apr 17 15:16:05 metasploitable3-ub1404 proftpd[2440]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant (Login failed): Incorrect password
+Apr 17 15:16:06 metasploitable3-ub1404 proftpd[2441]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant (Login failed): Incorrect password
+Apr 17 15:16:06 metasploitable3-ub1404 proftpd[2442]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant (Login failed): Incorrect password
+Apr 17 15:16:06 metasploitable3-ub1404 proftpd[2443]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant: Login successful.
+Apr 17 15:17:01 metasploitable3-ub1404 CRON[2445]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 17 15:17:01 metasploitable3-ub1404 CRON[2445]: pam_unix(cron:session): session closed for user root
+Apr 17 15:40:56 metasploitable3-ub1404 proftpd[2457]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant (Login failed): Incorrect password
+Apr 17 15:40:56 metasploitable3-ub1404 proftpd[2458]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant (Login failed): Incorrect password
+Apr 17 15:40:56 metasploitable3-ub1404 proftpd[2459]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant (Login failed): Incorrect password
+Apr 17 15:40:56 metasploitable3-ub1404 proftpd[2460]: localhost (172.16.19.10[172.16.19.10]) - USER vagrant: Login successful.
+Apr 17 15:42:57 metasploitable3-ub1404 sshd[2462]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 15:42:59 metasploitable3-ub1404 sshd[2462]: Failed password for vagrant from 172.16.19.10 port 43930 ssh2
+Apr 17 15:42:59 metasploitable3-ub1404 sshd[2462]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 15:42:59 metasploitable3-ub1404 sshd[2464]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 15:43:01 metasploitable3-ub1404 sshd[2464]: Failed password for vagrant from 172.16.19.10 port 43942 ssh2
+Apr 17 15:43:01 metasploitable3-ub1404 sshd[2464]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 15:43:01 metasploitable3-ub1404 sshd[2466]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 15:43:03 metasploitable3-ub1404 sshd[2466]: Failed password for vagrant from 172.16.19.10 port 43948 ssh2
+Apr 17 15:43:03 metasploitable3-ub1404 sshd[2466]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 15:43:03 metasploitable3-ub1404 sshd[2468]: Accepted password for vagrant from 172.16.19.10 port 43964 ssh2
+Apr 17 15:43:03 metasploitable3-ub1404 sshd[2468]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Apr 17 15:43:03 metasploitable3-ub1404 sshd[2468]: pam_unix(sshd:session): session closed for user vagrant
+Apr 17 16:04:40 metasploitable3-ub1404 sshd[2495]: Accepted password for vagrant from 172.16.19.10 port 60028 ssh2
+Apr 17 16:04:40 metasploitable3-ub1404 sshd[2495]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Apr 17 16:05:11 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/apache2/auth.log
+Apr 17 16:05:11 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:05:11 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:05:28 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/apache2/access.log
+Apr 17 16:05:28 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:05:32 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:07:21 metasploitable3-ub1404 sshd[2514]: Received disconnect from 172.16.19.10: 11: disconnected by user
+Apr 17 16:07:21 metasploitable3-ub1404 sshd[2495]: pam_unix(sshd:session): session closed for user vagrant
+Apr 17 16:07:33 metasploitable3-ub1404 sshd[2538]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:07:35 metasploitable3-ub1404 sshd[2538]: Failed password for vagrant from 172.16.19.10 port 55820 ssh2
+Apr 17 16:07:45 metasploitable3-ub1404 sshd[2538]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 55820 ssh2]
+Apr 17 16:07:45 metasploitable3-ub1404 sshd[2538]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:07:45 metasploitable3-ub1404 sshd[2538]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:07:55 metasploitable3-ub1404 sshd[2540]: Accepted password for vagrant from 172.16.19.10 port 55940 ssh2
+Apr 17 16:07:55 metasploitable3-ub1404 sshd[2540]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Apr 17 16:08:22 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/apache2/auth.log
+Apr 17 16:08:22 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:08:22 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:08:36 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/apache2/access.log
+Apr 17 16:08:36 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:08:43 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:09:09 metasploitable3-ub1404 sshd[2558]: Received disconnect from 172.16.19.10: 11: disconnected by user
+Apr 17 16:09:09 metasploitable3-ub1404 sshd[2540]: pam_unix(sshd:session): session closed for user vagrant
+Apr 17 16:09:13 metasploitable3-ub1404 sshd[2581]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:09:15 metasploitable3-ub1404 sshd[2581]: Failed password for vagrant from 172.16.19.10 port 37752 ssh2
+Apr 17 16:09:24 metasploitable3-ub1404 sshd[2581]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 37752 ssh2]
+Apr 17 16:09:24 metasploitable3-ub1404 sshd[2581]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:09:24 metasploitable3-ub1404 sshd[2581]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:09:29 metasploitable3-ub1404 sshd[2583]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:09:30 metasploitable3-ub1404 sshd[2583]: Failed password for vagrant from 172.16.19.10 port 38968 ssh2
+Apr 17 16:09:39 metasploitable3-ub1404 sshd[2583]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 38968 ssh2]
+Apr 17 16:09:39 metasploitable3-ub1404 sshd[2583]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:09:39 metasploitable3-ub1404 sshd[2583]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:09:44 metasploitable3-ub1404 sshd[2585]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:09:46 metasploitable3-ub1404 sshd[2585]: Failed password for vagrant from 172.16.19.10 port 50424 ssh2
+Apr 17 16:09:55 metasploitable3-ub1404 sshd[2585]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 50424 ssh2]
+Apr 17 16:09:55 metasploitable3-ub1404 sshd[2585]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:09:55 metasploitable3-ub1404 sshd[2585]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:02 metasploitable3-ub1404 sshd[2587]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:04 metasploitable3-ub1404 sshd[2587]: Failed password for vagrant from 172.16.19.10 port 57134 ssh2
+Apr 17 16:10:13 metasploitable3-ub1404 sshd[2587]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 57134 ssh2]
+Apr 17 16:10:13 metasploitable3-ub1404 sshd[2587]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:10:13 metasploitable3-ub1404 sshd[2587]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:23 metasploitable3-ub1404 sshd[2589]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:25 metasploitable3-ub1404 sshd[2589]: Failed password for vagrant from 172.16.19.10 port 42820 ssh2
+Apr 17 16:10:30 metasploitable3-ub1404 sshd[2589]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 42820 ssh2]
+Apr 17 16:10:30 metasploitable3-ub1404 sshd[2589]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:10:30 metasploitable3-ub1404 sshd[2589]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:35 metasploitable3-ub1404 sshd[2592]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:37 metasploitable3-ub1404 sshd[2592]: Failed password for vagrant from 172.16.19.10 port 54804 ssh2
+Apr 17 16:10:47 metasploitable3-ub1404 sshd[2592]: message repeated 2 times: [ Failed password for vagrant from 172.16.19.10 port 54804 ssh2]
+Apr 17 16:10:47 metasploitable3-ub1404 sshd[2592]: Connection closed by 172.16.19.10 [preauth]
+Apr 17 16:10:47 metasploitable3-ub1404 sshd[2592]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:52 metasploitable3-ub1404 sshd[2594]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.19.10  user=vagrant
+Apr 17 16:10:54 metasploitable3-ub1404 sshd[2594]: Failed password for vagrant from 172.16.19.10 port 60102 ssh2
+Apr 17 16:11:02 metasploitable3-ub1404 sshd[2594]: Failed password for vagrant from 172.16.19.10 port 60102 ssh2
+Apr 17 16:11:09 metasploitable3-ub1404 sshd[2594]: Accepted password for vagrant from 172.16.19.10 port 60102 ssh2
+Apr 17 16:11:09 metasploitable3-ub1404 sshd[2594]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Apr 17 16:11:24 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/apache2/auth.log
+Apr 17 16:11:24 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:11:24 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:15:44 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/apache2/auth.log
+Apr 17 16:15:44 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:15:44 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:17:01 metasploitable3-ub1404 CRON[2635]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr 17 16:17:01 metasploitable3-ub1404 CRON[2635]: pam_unix(cron:session): session closed for user root
+Apr 17 16:17:45 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/auth.log
+Apr 17 16:17:45 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:17:45 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:18:07 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/auth.log
+Apr 17 16:18:07 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
+Apr 17 16:18:07 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 16:21:27 metasploitable3-ub1404 sudo:  vagrant : TTY=pts/1 ; PWD=/home/vagrant ; USER=root ; COMMAND=/bin/cat /var/log/auth.log
+Apr 17 16:21:27 metasploitable3-ub1404 sudo: pam_unix(sudo:session): session opened for user root by vagrant(uid=0)
