@@ -2,8 +2,7 @@ import argparse
 import csv
 import re
 import sys
-from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 
 # Regex for failed password or invalid user attempts
@@ -13,9 +12,9 @@ LOG_PATTERN = re.compile(
     r"from (?P<ip>\d{1,3}(?:\.\d{1,3}){3})"
 )
 
-# Configuration for brute-force detection
-TIME_WINDOW_MINUTES = 5  # Time window to track repeated attempts
-ATTEMPT_THRESHOLD = 3  # Minimum attempts in the window to flag
+# Configuration for brute-force detection (not used yet but kept for future expansion)
+TIME_WINDOW_MINUTES = 5
+ATTEMPT_THRESHOLD = 3
 
 
 def parse_arguments():
@@ -46,60 +45,70 @@ def parse_arguments():
 
 def parse_log(file_path):
     path = Path(file_path)
+
     if not path.exists():
         print(f"Error: file {file_path} does not exist", file=sys.stderr)
         sys.exit(1)
 
     records = []
     current_year = datetime.now().year
+
     with path.open(encoding="utf-8", errors="ignore") as f:
         for line in f:
             match = LOG_PATTERN.search(line)
-            if match:
-                # Extract the user account correctly, either from failed or invalid user
-                user = match.group("failed_user") or match.group("invalid_user")
-                timestamp = datetime.strptime(
-                    match.group("timestamp"), "%b %d %H:%M:%S"
-                )
-                timestamp = timestamp.replace(year=current_year)
 
-                # Only capture failed login attempts (exclude accepted password)
+            if match:
+                # Get username (failed or invalid)
+                user = match.group("failed_user") or match.group("invalid_user")
+
+                # FIXED: include year directly in parsing (no warning)
+                timestamp_str = f"{match.group('timestamp')} {current_year}"
+                timestamp = datetime.strptime(timestamp_str, "%b %d %H:%M:%S %Y")
+
+                # Only capture failed login attempts
                 if "Accepted password" not in line:
-                    record = {
-                        "Timestamp": timestamp.strftime("%b %d %H:%M:%S"),
-                        "IP_Address": match.group("ip"),
-                        "User_Account": user,
-                    }
-                    records.append(record)
+                    records.append(
+                        {
+                            "Timestamp": timestamp.strftime("%b %d %H:%M:%S"),
+                            "IP_Address": match.group("ip"),
+                            "User_Account": user,
+                        }
+                    )
+
     return records
 
 
 def remove_duplicates(records):
     seen = set()
     unique_records = []
+
     for record in records:
         key = (record["Timestamp"], record["IP_Address"], record["User_Account"])
         if key not in seen:
             seen.add(key)
             unique_records.append(record)
+
     return unique_records
 
 
 def write_csv(records, output_path):
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
+
     with output_path.open("w", newline="") as csvfile:
         fieldnames = ["Timestamp", "IP_Address", "User_Account"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
         writer.writeheader()
-        for rec in records:
-            writer.writerow(rec)
+        writer.writerows(records)
 
 
 def main():
     args = parse_arguments()
+
     records = parse_log(args.input_file)
     unique_records = remove_duplicates(records)
+
     write_csv(unique_records, args.output)
 
 
