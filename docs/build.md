@@ -1,147 +1,170 @@
 # The Benji Protocol — Build Log
 
-**Student Name:**
-**Student ID:**
-**GitHub Repository:**
+**Student Name:*Sikandar Ali Hussain*
+**Student ID:*2323039*
+**GitHub Repository:* https://github.com/sh10crt/benji-protocol-sh10crt*
 
 ---
+24/04/2026 — Session A
 
-> "Benji documents everything. Not because he is asked to. Because a tool with
-> no history is a tool you cannot trust, and a mission with no record is a
-> mission that never happened."
+What I built / changed:
+Started working on log_parser.py to parse auth.log and extract login attempts.
 
-This is your running build log. Update it after every significant coding
-session. It is not an essay — it is a technical journal. Short entries are
-fine. No entry is not fine.
+What broke and how I fixed it:
+Initially the script could not find the file due to incorrect path usage. Fixed by using full file path instead of relative path.
 
-The build log serves three purposes:
-1. It is evidence of your development process for the portfolio marker.
-2. It is your own reference when something breaks at 23:00 the night before
-   the Vulnerability Hunt.
-3. It demonstrates that the code in your repository is yours.
+Decisions I made and why:
+Used regex to extract timestamps, usernames, and IPs because logs are unstructured.
 
----
+What the tool output when I ran it against Metasploitable:
+Parsed login attempts successfully but showed a warning related to datetime parsing.
 
-## How to Use This Document
+Questions or things to revisit:
+Fix datetime warning for future Python versions.
 
-Add a new entry for each session using the template below. Commit this file
-alongside your code — the build log and the code should tell the same story.
+24/04/2026 — Session B
 
----
+What I built / changed:
+Improved parsing logic and handled file input more reliably.
 
-## Entry Template
+What broke and how I fixed it:
+Datetime parsing warning appeared. Identified issue with missing year in logs.
 
-### [DATE] — [TASK / SESSION]
+Decisions I made and why:
+Ignored warning for now since functionality is correct, will fix later if needed.
 
-**What I built / changed:**
+What the tool output when I ran it against Metasploitable:
+Correctly extracted login attempts.
 
-**What broke and how I fixed it:**
-
-**Decisions I made and why:**
-
-**What the tool output when I ran it against Metasploitable:**
-
-**Questions or things to revisit:**
-
----
-
-## Week 1 — Task 1: Evidence Collector
-
-### [DATE] — Session A
-
-
-
-### [DATE] — Session B
-
-
-
----
+Questions or things to revisit:
+Improve date parsing robustness.
 
 ## Week 2 — Task 2: Network Cartographer
+24/04/2026 — Session A
 
-### [DATE] — Session A
+What I built / changed:
+Developed scan.py for port scanning and banner grabbing.
 
-**Metasploitable scan output (paste key results):**
-```json
+What broke and how I fixed it:
+Script failed due to incorrect file path execution. Fixed by running from correct directory.
 
-```
+Decisions I made and why:
+Used socket.connect_ex() for efficient port scanning and added banner grabbing for service identification.
 
-**Observations — what services did you find? What do the banners tell you?**
+Metasploitable scan output (paste key results):
 
+{
+  "target": "172.16.19.200",
+  "open_ports": [21, 22, 80, 445, 631]
+}
 
+Observations — what services did you find? What do the banners tell you?
+FTP (ProFTPD), SSH (OpenSSH), HTTP (Apache), SMB, and CUPS were running. SSH and FTP versions were outdated.
 
-### [DATE] — Session B
+24/04/2026 — Session B
 
+What I built / changed:
+Added threading for faster scanning.
 
+What broke and how I fixed it:
+Some ports were missed initially due to timeout issues. Adjusted timeout settings.
 
----
+Decisions I made and why:
+Used threading to improve performance.
+
+What the tool output when I ran it against Metasploitable:
+Successfully detected all open ports with banners.
+
+Questions or things to revisit:
+Improve reliability of banner grabbing.
 
 ## Week 3 — Task 3: Access Validator
+24/04/2026 — Session A
 
-### [DATE] — Session A
+What I built / changed:
+Worked on brute.py for SSH brute-force.
 
+What broke and how I fixed it:
+Wordlist file not found error. Fixed by using correct full file path.
 
+Decisions I made and why:
+Used paramiko for SSH authentication attempts.
 
-### [DATE] — Session B
+What the tool output when I ran it against Metasploitable:
+Initially failed due to incorrect file path.
 
+Questions or things to revisit:
+Improve error handling for file inputs.
 
+24/04/2026 — Session B
 
----
+What I built / changed:
+Successfully executed brute-force attack.
+
+What broke and how I fixed it:
+No major issues after fixing path.
+
+Decisions I made and why:
+Stopped execution once valid credentials were found.
+
+What the tool output when I ran it against Metasploitable:
+
+[+] SUCCESS: Password found: fluffybunny
+
+Questions or things to revisit:
+Add logging for attempts.
 
 ## Week 4 — Task 4: Web Enumerator
+24/04/2026 — Session A
 
-### [DATE] — Session A
+What I built / changed:
+Developed web_enum.py for HTTP enumeration.
 
-**Metasploitable web recon output:**
+What broke and how I fixed it:
+Requests module issues fixed using virtual environment.
 
+Decisions I made and why:
+Used BeautifulSoup to extract HTML comments.
 
-**HTML comments found:**
+Metasploitable web recon output:
+Apache/2.4.7 (Ubuntu)
 
+HTML comments found:
 
-**Sensitive paths found:**
+s.lane username exposed
+staging DB reference
 
+Sensitive paths found:
 
+/phpmyadmin (403)
+24/04/2026 — Session B
 
-### [DATE] — Session B
+What I built / changed:
+Improved parsing of comments and paths.
 
+What broke and how I fixed it:
+Handled missing paths more cleanly.
 
-
----
+Decisions I made and why:
+Focused on extracting useful intelligence for exploitation.
 
 ## Week 5 — Vulnerability Hunt
+Hunt Log
 
-> This section is your mission log. Update it in real time during the session.
-> Benji does not write the mission log after the mission. He writes it during.
+13:30 — Diagnosis phase:
+Ran scan.py and web_enum.py. Identified open ports and username (s.lane).
 
-### Pre-Hunt Checklist
+13:40 — Vulnerability identified:
+Weak SSH authentication with password login enabled.
 
-- [ ] All four toolkit tools pass their field tests locally
-- [ ] `requirements.txt` is up to date (`pip freeze > requirements.txt`)
-- [ ] `AI_LOG.md` is current
-- [ ] `vulnerability_hunt/exploit.py` — argument parsing in place
-- [ ] `vulnerability_hunt/fix.py` — argument parsing in place
-- [ ] `vulnerability_hunt/REPORT.md` — headings populated, ready to fill
-- [ ] Git remote confirmed, can push
-- [ ] Tags w1, w2, w3, w4 in place
+13:50 — Exploit development:
+Used brute.py to perform SSH brute-force.
 
-### Hunt Log
+13:55 — Flag retrieved:
 
-**[TIME] — Diagnosis phase:**
+14:05 — Remediation:
+Ran fix.py to disable password authentication and harden SSH.
 
-
-**[TIME] — Vulnerability identified:**
-
-
-**[TIME] — Exploit development:**
-
-
-**[TIME] — Flag retrieved:**
-```
-FLAG:
-```
-
-**[TIME] — Remediation:**
-
-
-**[TIME] — Final commit and push:**
+14:10 — Final commit and push:
+All scripts tested and committed.
 
